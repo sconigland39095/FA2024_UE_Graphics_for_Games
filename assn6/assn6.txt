@@ -1,0 +1,12 @@
+Name: Sydnee Conigland
+ID: GI27010
+
+Screenshots:
+~ Couldn't compile to get screenshots
+
+Notes:
+~ Nothing works. It doesn't compile
+~ After finding the assigned RGBToHSV class, I copied it over into a new class
+.cpp & .h file, respectively, but then errors would pop up when I compile. I've tried taking
+functions and libraries from other files to fix them, but I have been stuck at the trying
+to get FExpressionSelect decalared error. I'm too frustrated to continue.
