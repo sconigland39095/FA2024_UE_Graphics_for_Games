@@ -1,0 +1,44 @@
+float4 Volume(
+	FMaterialPixelParameters Parameters, 
+	Texture3D VolumeTex, Texture2D VolumeLUT, 
+	float OpacityScale, 
+	float MaxSteps)
+{
+	// start position on surface, relative to object center
+	FWSVector3 Pos = GetWorldPosition(Parameters);
+	FWSVector3 Ctr = GetObjectWorldPosition(Parameters);
+	float3 P = WSDemote(WSSubtract(Pos, Ctr));
+
+	// ray direction;
+	float3 D = -normalize(Parameters.CameraVector);
+
+	// distance to box exit
+	float3 VolumeSize =  float3(
+		GetPrimitiveData(Parameters).ObjectBoundsX,
+		GetPrimitiveData(Parameters).ObjectBoundsY,
+		GetPrimitiveData(Parameters).ObjectBoundsZ);
+	float3 BoxExits = (sign(D) * VolumeSize - P) / D;
+	float exitDist = min(BoxExits.x, min(BoxExits.y, BoxExits.z));
+
+	// convert MaxSteps into distance
+	float StepSize = 2 * length(VolumeSize) / MaxSteps;
+	float3 RayStep = D * StepSize;
+	float OpacityStep = saturate(StepSize / OpacityScale);
+
+	// randomize start position
+	int3 RandPos = int3(GetPixelPosition(Parameters), View.FrameNumber);
+	float3 Rand = float3(Rand3DPCG16(RandPos)) / 0x10000;
+	P += Rand.x * RayStep;
+	float s = Rand.x * StepSize;
+
+	// accumulate volume along ray
+	float4 result = 0;
+	for (int i=0; i < MaxSteps && s < exitDist; ++i, s += StepSize, P += RayStep) {
+		float3 VolCoord = P * 0.5 / VolumeSize + 0.5;
+		float VolumeSample = VolumeTex.Sample(GlobalTrilinearClampedSampler, VolCoord).r;
+		float4 LocalColor = VolumeLUT.Sample(GlobalBilinearClampedSampler, VolumeSample.xx) * OpacityStep;
+		result += (1 - result.a) * LocalColor;
+	}
+
+	return result;
+}

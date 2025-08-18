@@ -1,0 +1,12 @@
+Name: Sydnee Conigland
+ID: GI27010
+
+Screenshots:
+~ Atom Texture in Level: https://drive.google.com/file/d/1MShmF2dOVEMPc_MvQGIGIFuXwaooGKWQ/view?usp=sharing
+~ Atom Texture in Material Graph: https://drive.google.com/file/d/1YyIM05QJYOCSLPTRwpzWRn3SYyWS_vrg/view?usp=sharing
+~ Depth Slice View: https://drive.google.com/file/d/14obR8utIAd7OMByOR_7m1MvuVQwa1iGJ/view?usp=sharing
+
+Notes:
+~ Everything for the base project, as far as I know, works.
+~ Extra Credit: I tried to implement "uint16" support (Lines: 186 - 207), but I don't know if it works. 
+	~ I tried to do as was exactly stated in the directions, but I didn't really understand them so I hope it works.

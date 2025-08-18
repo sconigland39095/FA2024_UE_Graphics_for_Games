@@ -1,0 +1,13 @@
+NRRD0004
+# Complete NRRD file format specification at:
+# http://teem.sourceforge.net/nrrd/format.html
+type: uint8
+dimension: 3
+space: left-posterior-superior
+sizes: 128 128 128
+space directions: (1,0,0) (0,1,0) (0,0,1)
+kinds: domain domain domain
+endian: little
+encoding: raw
+space origin: (-64.0,-64.0,-64.0)
+data file: hydrogen_atom_128x128x128_uint8.raw

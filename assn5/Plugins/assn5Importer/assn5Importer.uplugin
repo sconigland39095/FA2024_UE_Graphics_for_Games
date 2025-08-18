@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "assn5Importer",
+	"Description": "Shader Importer",
+	"Category": "Other",
+	"CreatedBy": "SC",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "assn5Importer",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
+		}
+	]
+}
