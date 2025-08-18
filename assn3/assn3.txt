@@ -1,0 +1,17 @@
+Name: Sydnee Conigland
+ID: GI27010
+
+Videos:
+~Average Video, showcasing the neighbors decently clustering but also shooting off in various directions:
+	https://drive.google.com/file/d/1C7vF1zvr4o512yCNclglj8Ro7FqGE6y4/view?usp=sharing
+
+~"Good" Video, showcasing that when the neighbors spawn correctly, they cluster like (I think) they're supposed to:
+	https://drive.google.com/file/d/1yd9_UcNN9qzhWNi6eO2V9Vm3UXKcbEiF/view?usp=sharing
+
+Notes:
+~ Having no idea how to search for pseudocode for a behavior to implement, I tried to implement the boid algorithm: http://www.kfish.org/boids/pseudocode.html
+~ I think for implementing an algorith that is supposed to have the balls, or boids, move independently based on one another and not have the collective whole affect one boid
+at a time, I think the implementation kind of works. However, there is definitely a better behavior, like a more player interactive one, that I could have implemented if I 
+thought of or found one.
+~ The current implementation is very finicky in flip-flopping between actually clustering and shooting balls off in random direction (for being too close?)
+
