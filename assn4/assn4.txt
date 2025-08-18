@@ -1,0 +1,24 @@
+Name: Sydnee Conigland
+ID: GI27010
+
+Screenshots:
+Blue Noise:
+~ 0 Seed, 10 Spawn: https://drive.google.com/file/d/14bGrrLfH8AZOZedoQCo-zIvAcabYsaI-/view?usp=sharing
+~ 0 Seed, 15 Spawn: https://drive.google.com/file/d/1dfdzAI80_H5haFIvVywjbFwV-o64ODWS/view?usp=sharing
+~ 3 Seed, 10 Spawn: https://drive.google.com/file/d/1lhOQUzlzMEU7eR_biN2eOgS0W5vM0Tal/view?usp=sharing
+~ 3 Seed, 20 Spawn: https://drive.google.com/file/d/1U_Aw9ucPZO8Tz2DmPFAkKxIwfqYBz030/view?usp=sharing
+~ 10 Seed, 15 Spawn: https://drive.google.com/file/d/1iIl-uwkOHiKwmotB9MSLFy4FOBDNTNuw/view?usp=sharing
+
+
+Random:
+~ 0 Seed, 10 Spawn: https://drive.google.com/file/d/1Rqp6rUTgXrF16JJbUEHxkUHdGEQCz4K5/view?usp=sharing
+~ 0 Seed, 15 Spawn: https://drive.google.com/file/d/1Sz9Wor4F_DB4HxzJp23rkPOx5xAlM6cw/view?usp=sharing
+~ 3 Seed, 10 Spawn: https://drive.google.com/file/d/1jUrImLdIA0ckR5q-c_1qt6dLCWNJofhY/view?usp=sharing
+~ 3 Seed, 15 Spawn: https://drive.google.com/file/d/1cf5NigXdzLF04m3RVGw6HdHM059rD-S9/view?usp=sharing
+~ 10 Seed, 25 Spawn: https://drive.google.com/file/d/1bu20lvOk6h64Hg_UwCxfEWTQTWi2mjcM/view?usp=sharing
+
+
+Notes:
+~ Everything, as far as I know, works, except I do not check for if a tree already exists at the "new" sample location nor do I do the suggested
+following bullet point for a better result: "When calculating distance between dots, you need to consider wrap around. More info on how 
+to do that here: Calculating the Distance Between Points in “Wrap Around” (Toroidal) Space."
