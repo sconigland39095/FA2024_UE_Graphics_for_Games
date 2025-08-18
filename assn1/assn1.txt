@@ -1,0 +1,13 @@
+Name: Sydnee Conigland
+ID: GI27010
+
+Material Graph Screenshot URL: https://drive.google.com/file/d/1Sm_A72X_qBEDNahaEyYf9ws_DzL2ZCam/view?usp=sharing
+Video URL: https://drive.google.com/file/d/1lZX5u2JR8LJGhKoqjHE6CH4005hFFMQL/view?usp=sharing
+
+Notes:
+~ Everything seems to be working: the sphere looks like a cloud
+~ In order for the video to not lag terribly, I turned off ray tracing reflection
+and ray tracing global illumination via typing into the console "r.RayTracing.Reflections 0"
+and "r.RayTracing.GlobalIllumination 0" 
+(according to this advice: https://forums.unrealengine.com/t/how-to-disable-realtime-raytracing-gi-and-reflections/490617)
+	~ I also lowered the Engine Scalability to Low
