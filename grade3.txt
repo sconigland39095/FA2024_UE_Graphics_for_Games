@@ -1,0 +1,40 @@
+CMSC 438 / Graphics for Games
+Assignment 3 Grading Rubric
+
+30/30 - Basics
+    5/ 5 - Created assn3 project from template
+    5/ 5 - Necessary files checked in (uproject, Config/, Content/)
+    5/ 5 - No starter content in Content/
+    5/ 5 - Transient files not checked in (including Binaries/,
+          DerivedDataCache/, Intermediate/, Saved/, etc.) [1]
+    5/ 5 - Multiple checkins during development
+    5/ 5 - Final commit tagged
+15/18 - AI Controller
+    3/ 3 - C++ class derived from AAIController
+    3/ 3 - Member variable to track neighbors
+    0/ 3 - Member variables EditAnywhere members for behavior weights [2]
+    3/ 3 - Overrode AttachToPawn virtual function
+    3/ 3 - Create begin and end overlap functions with correct signature
+    3/ 3 - Override Tick virtual function
+12/12 - AttachToPawn setup
+    3/ 3 - Create USphereComponent in AttachToPawn with pawn as owner
+    3/ 3 - Set sphere radius
+    3/ 3 - Attach and register component
+    3/ 3 - Add OnComponentBeginOverlap and OnComponentEndOverlap functions
+5/5 - Overlap handling
+    2/ 2 - Check for self in BeginOverlap
+    3/ 3 - Add to neighbor list in BeginOverlap and remove in EndOverlap
+15/15 - Tick Behavior
+    5/ 5 - Loop over neighbors
+    5/ 5 - Compute force
+    5/ 5 - Use pawn's AddMovementComponent with DeltaTime
+20/20 - Results
+    5/ 5 - assn3.txt file included
+    5/ 5 - assn3.txt includes description of what's working and not
+    10/10 - Video file demonstrating project
+----
+97/100 - Total
+
+[1] One Binaries file slipped through, but I see you changed the .gitignore after, so I'm not counting off for that this time.
+
+[2] Getting good results from crowd and boid systems is notoriously dependent on the balance of the force components. I said to add UPROPERTY scale parameters specifically so you could tweak and balance these live. Try it! It'll be much easier to get good results.

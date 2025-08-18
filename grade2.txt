@@ -1,0 +1,40 @@
+CMSC 438 / Graphics for Games
+Assignment 2 Grading Rubric
+
+29/30 - Basics
+    5/ 5 - Created assn2 project and map
+    5/ 5 - Necessary files checked in (uproject, Config/, Content/)
+    5/ 5 - No starter content
+    4/ 5 - Transient files not checked in (including Binaries/,
+          DerivedDataCache/, Intermediate/, Saved/, etc.) [1]
+    5/ 5 - Multiple checkins during development
+    5/ 5 - Final commit tagged
+46/55 - Maze Generation
+    5/ 5 - C++ Actor
+    5/ 5 - USceneComponent set as RootComponent
+    3/ 5 - UInstancedStaticMeshComponent member [2]
+    5/ 5 - Use FObjectFinder to find and set plane mesh
+    5/ 5 - Maze logic and updates in OnConstruction
+    2/ 5 - EditAnywhere random seed, used for randomization [3]
+    5/ 5 - EditAnywhere UMaterial* member, updated when changed
+    5/ 5 - AddInstance rotation and translation to form grid
+    6/10 - Successful implementation of recursive division algorithm [4,5]
+    4/ 5 - Only shows instances where walls should be in the maze [6]
+15/15 - Results
+    5/ 5 - assn2.txt file included
+    5/ 5 - assn2.txt includes description of what's working and not
+    5/ 5 - Multiple sample images
+----
+89/100 - Total
+
+[1] Several files in the Binaries directory slipped in on a couple of commits
+
+[2] Instanced Static Mesh created in OnConstruction instead of in constructor. Means you're creating and attaching a new one anytime a parameter changese, but never detach the old ones, so some of the missing gaps are probably overlapping static meshes with different wall sets.
+
+[3] You do seed a random stream, but don't use it, and use the system global rand() instead. Won't be able to create repeatable mazes with the same seed.
+
+[4] Termination condition of recursion should be < 2, not <= 2.
+
+[5] You have expressions using 'horizontal' as a bool, but it's either 1 for HORIZONTAL or 2 for VERTICAL, both of which are true when cast to bool. 0 is the only integer that is false when cast to BOOL. That's why all of your walls are horizontal. You could probably fix by making VERTICAL 0. There could be other bugs in that un-tested path, though the code looks mostly OK to my visual inspection.
+
+[6] Extra walls outside the box

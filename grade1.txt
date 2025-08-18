@@ -1,0 +1,32 @@
+CMSC 438 / Graphics for Games
+Assignment 1 Grading Rubric
+
+30/30 - Basics
+    5/ 5 - Created assn1 project and map
+    5/ 5 - Necessary files checked in (uproject, Config/, Content/)
+    5/ 5 - No starter content in Content/
+    5/ 5 - Transient files not checked in (including Binaries/,
+          DerivedDataCache/, Intermediate/, Saved/, etc.)
+    5/ 5 - Local commits pushed to github (no github.com emails in log)
+    5/ 5 - Multiple checkins during development
+    5/ 5 - Final commit tagged
+10/10 - Project shader directory mapping
+    5/ 5 - Build.cs, assn1.h, and assn1.cpp changes to add /Project
+    5/ 5 - Shader file in assn1/Shaders/Cloud.ush
+40/40 - Volume Material
+    5/ 5 - Created a Material
+    5/ 5 - Material applied to sphere in scene
+    5/ 5 - Material is translucent / unlit
+    5/ 5 - Mask term
+    5/ 5 - Noise-based density
+    5/ 5 - Ray march
+    5/ 5 - Shadow march
+    5/ 5 - Randomization
+20/20 - Results
+     5/ 5 - assn1.txt file
+     5/ 5 - Screen shot link of material network
+    10/10 - Video file link demonstrating project
+----
+100/100 - Total
+
+

@@ -1,0 +1,34 @@
+CMSC 438/691 / Graphics for Games
+Assignment 0 Grading Rubric
+
+25/25 - Basics
+   5/ 5 - Provided git ID
+   5/ 5 - Forked github repository
+   5/ 5 - Multiple checkins during development
+   5/ 5 - Local commits pushed to github (no github.com emails in log)
+   5/ 5 - Final commit tagged
+55/55 - assn0 project
+   5/ 5 - assn0 directory in g4g2024
+   5/ 5 - assn0.uproject checked in
+   5/ 5 - Project created from source build (empty EngineAssociation in 
+        assn0.uproject)
+   5/ 5 - Config files checked in (DefaultEditor.ini, DefaultEngine.ini,
+        DefaultGame.ini)
+   5/ 5 - Created as C++ project (Source directory and content)
+   5/ 5 - Content directory checked in
+   5/ 5 - No starter content (no Content/StarterContent)
+   5/ 5 - Created assn0 level (Content/assn0.umap exists)
+   5/ 5 - Default level set to assn0 (assn0 for EditorStartupMap in 
+        DefaultEngine.ini)
+   5/ 5 - Transient files not checked in (including Binaries/,
+        DerivedDataCache/, Intermediate/, Saved/, etc.)
+   5/ 5 - Build files not checked in (UE5.sln, Mac xcworkspace, etc.)
+20/20 - Results
+   5/ 5 - assn0.txt file checked in with computer info [1]
+   5/ 5 - Timing info
+   5/ 5 - Screen shot of project
+   5/ 5 - Screen shot shows a sphere added to level
+----
+100/100 - Total
+
+[1] I really would have expected the scalability settings to help with the video memory errors. Maybe explicitly disabling some of the high-GPU-memory features like nanite and ray tracing would help (I believe those settings are in one of the menus at the top-left of the main UE5 editor window)

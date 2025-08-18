@@ -1,0 +1,48 @@
+CMSC 438/691 / Graphics for Games
+Assignment 6 Grading Rubric
+
+30/30 - Basics
+    5/ 5 - Created assn6 project
+    5/ 5 - Necessary files checked in (uproject, Config/, Content/)
+    5/ 5 - No starter content in Content/
+    5/ 5 - Transient files not checked in (including Binaries/,
+          DerivedDataCache/, Intermediate/, Saved/, etc.)
+    5/ 5 - Multiple checkins during development
+    5/ 5 - Final commit tagged
+15/35 - Material Node
+    4/ 5 - New class derived from UMaterialExpression [1]
+    3/ 5 - UPROPERTY FExpressionInput for input UV [2]
+    4/ 5 - UPROPERTY ints for X & Y Edges
+    4/ 5 - Constructor & GetCaption (most likely in MaterialExpressions.cpp) [3]
+    0/ 5 - Compiler code plumbed through MaterialCompiler.h, HLSLMaterialTranslator.h,cpp [4]
+    0/ 5 - AddCodeChunk to generate function call, returning MCT_Float2 [4]
+    0/ 5 - Pass input and edge counts to shader call [4]
+1/ 5 - New shader compiler implementation
+    1/ 5 - Code in MaterialExpressionHLSL, possibly also MaterialHLSLTree [5]
+0/10 - Shader Code [6]
+    0/ 5 - Shader code in Engine/Shaders, included in MaterialTemplate.ush
+    0/ 5 - Implemented tiling algorithm
+10/20 - Results
+    5/ 5 - assn6.txt file included
+    5/ 5 - assn6.txt includes description of what's working and not
+    0/10 - Links to screen shots demonstrating project [7]
+/15 - Extra Credit
+    / 5 - Seed input
+    / 5 - UV input default
+    / 5 - Texture lookup in node
+----
+56/100 - Total (up to 115 with extra credit)
+
+[1] Should be in Engine/Source/Runtime/Engine/Classes/Materials alongside MaterialExpressionRgbToHsv.h. This project is about making changes to the core engine code.
+
+[2] Created an FVector2D for UV. Did still have the FExpressionInput for Input, but did not rename.
+
+[3] Created in its own file, though that is OK. Did not update caption for new node name.
+
+[4] Did not replicate these bits from the RgbToHsv implementation.
+
+[5] GenerateHLSLExpression function exists, but unchanged from RgbToHsv.
+
+[6] No shader code
+
+[7] Not working well enough for screen shots.

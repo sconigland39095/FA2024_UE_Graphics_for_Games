@@ -1,0 +1,32 @@
+CMSC 438 / Graphics for Games
+Assignment 4 Grading Rubric
+
+30/30 - Basics
+    5/ 5 - Created assn4 project from template
+    5/ 5 - Necessary files checked in (uproject, Config/, Content/)
+    5/ 5 - No starter content in Content/
+    5/ 5 - Transient files not checked in (including Binaries/,
+          DerivedDataCache/, Intermediate/, Saved/, etc.)
+    5/ 5 - Multiple checkins during development
+    5/ 5 - Final commit tagged
+10/10 - Blueprint Test Actors
+    5/ 5 - Blueprint actor for RandomStream
+    5/ 5 - Blueprint actor for Blue Noise
+38/40 - Blueprint Plugin
+    5/ 5 - Implementation in blueprint plugin
+    5/ 5 - Declared new blueprint type
+    5/ 5 - Blueprint type includes necessary state
+    5/ 5 - Declared BP make function
+    5/ 5 - BP make takes min, max, and seed, produces new type
+    5/ 5 - Declared Blueprint function to generate points (called BNPoint below)
+    5/ 5 - BNPoint function takes new type and returns one point per call
+    2/ 5 - BNPoint successfully implements Mitchell's Best Candidate algorithm [1]
+20/20 - Results
+    5/ 5 - assn4.txt file included
+    5/ 5 - assn4.txt describes project
+    10/10 - Screen shots demonstrating project
+-5 - 1 day late
+----
+92/100 - Total
+
+[1] Only compute distance against last point, not against all points accepted so far. That's why your blue noise distribution looks almost as clumpy as your random one. Also missing toroidal distance (though would be pretty easy to add with distance computation in its own function)

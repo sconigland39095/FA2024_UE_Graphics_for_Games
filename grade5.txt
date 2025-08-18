@@ -1,0 +1,56 @@
+CMSC 438 / Graphics for Games
+Assignment 5 Grading Rubric
+
+30/30 - Basics
+    5/ 5 - Built in provided assn5 project
+    5/ 5 - Necessary files checked in (uproject, Config/, Content/)
+    5/ 5 - No starter content in Content/
+    5/ 5 - Transient files not checked in (including Binaries/,
+          DerivedDataCache/, Intermediate/, Saved/, etc.)
+    5/ 5 - Multiple checkins during development
+    5/ 5 - Final commit tagged
+10/10 - Plugin Structure
+    2/ 2 - Add UnrealEd to plugin Build.cs; change plugin from Runtime to Editor
+    2/ 2 - New class derived from UFactory
+    2/ 2 - Formats.Add (ext;description, no spaces; ok if description is empty)
+    2/ 2 - SupportedClass set
+    2/ 2 - Appropriate flags (bEditorImport, *not* bCreateNew, others either way)
+27/30 - Read File
+    2/ 2 - Overload UFactory::FactoryCreateFile
+    1/ 2 - Report errors with UE_LOG and return nullptr [1]
+    4/ 4 - Reasonable error checking
+    2/ 2 - Read header file
+    0/ 2 - Check for NRRD0004 [2]
+    4/ 4 - Skip comments and unsupported keywords
+    10/10 - Parse type, dimension, sizes, and datafile lines
+    4/ 4 - Construct path to data file & read data
+10/10 - Create UE object
+    2/ 2 - Create new UVolumeTexture object
+    2/ 2 - Set texture flags
+    4/ 4 - Texture Init & UpdateResource
+    2/ 2 - Return successfully created texture
+20/20 - Results
+    5/ 5 - assn5.txt file included
+    5/ 5 - assn5.txt includes description of what's working and not
+    10/10 - Screen shots demonstrating project
+2/15 - Max Possible Extra Credit
+    / 5 - Progress bar
+    2/ 5 - uint16 data [3,4,5]
+    / 5 - 2D textures
+    / 5 - nrrd with embedded data
+    / 5 - byteskip
+    / 5 - multichannel data
+----
+99/100 - Total (115 possible with extra credit)
+
+[1] Used LogTemp rather than making your own log category.
+
+[2] Did not check file identification line
+
+[3] Scale should be itr *= 0xffff / MaxValue, rather than itr /= MaxValue
+
+[4] Max adjustment loop should use &itr so you can modify it
+
+[5] Did not check for endian or swap bytes if necessary
+
+[6] With [3,4], I was able to import the 16-bit present dataset (that one didn't need the endian swap, so did not need [5]). Shows that the rest of your 16-bit import code was working.
