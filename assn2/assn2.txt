@@ -1,0 +1,17 @@
+Name: Sydnee Conigland
+ID: GI27010
+
+Screenshots:
+~5x5 - Seed 10 Maze: https://drive.google.com/file/d/16zQ1eTFDiOLSSS5Wma0OZP7vfHeqg4BE/view?usp=sharing
+~10x10 - Seed 0 Maze: https://drive.google.com/file/d/1zhaDwH1-61oeNHM70Xc_1-z3WVrvNtHG/view?usp=sharing
+~10x10 - Seed 10 Maze: https://drive.google.com/file/d/19SRDyAAUwQt9jYQlcDSHPpLVnO8sLWJo/view?usp=sharing
+~15x14 - Seed 2 Maze: https://drive.google.com/file/d/1J1aVnsm2P0SMJsp9oJatjdnaHqEL__Gr/view?usp=sharing
+~Fixed Grid: https://drive.google.com/file/d/1iwmg5ZVtRjlvv6fa3SGBqqUpnuZEfXSp/view?usp=sharing
+
+Notes:
+~ Everything up to the Maze Construction Step worked. 
+~ The implemented Maze Construction algorithm does not work completely.
+  ~ My algorithm...
+	~ Creates a border for the maze, but for some reason the bottom row extends farther than it should.
+	~ Creates HORIZONTAL walls within the maze, but for some reason won't place VERTICAL.
+	~ Doesn't seem to make gaps in the wall for one to enter and leave the maze.
