@@ -1,0 +1,25 @@
+Name: Sydnee Conigland
+ID: GI27010
+
+Computer Specifications:
+~ OS: Windows 10
+~ CPU: Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz 2.30 GHz 
+	with 4 cores & 8 logical processors
+~ GPU-0: Intel(R) UHD Graphics
+~ GPU-1: NVIDIA GeForce MX250
+
+UE5 Build Time(s):
+~ 1st Major Fail (after securing enough space): 17:03:33.83 (Thursday -> Friday)
+~ Success: 17:35:18.63 (Friday -> Saturday)
+
+Image (Screenshot) URL: https://drive.google.com/file/d/1uqiQrDe0Dg3im60iXCiKIYKPwDoiGAf-/view?usp=sharing
+
+Notes:
+~ Everything seems to be working: UE5 is up & running. I have completed all the tasks
+  up to writing this text file for the first time.
+~ So that UE5 doesn't lag so much, I changed my Engine Scalability Setting from
+  Epic to Medium
+~ UE5 keeps telling me that video memory has been exhausted so expect extremely poor 
+  performance. I don't know what that means or if I should be concerned. The changed
+  Engine Scalability Setting did not fix this; nor did changing the Project
+  Setting's Global Illumination & Reflection (according to Google).
