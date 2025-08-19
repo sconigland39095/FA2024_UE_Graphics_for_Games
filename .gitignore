@@ -21,6 +21,8 @@
 /assn2/Binaries
 /assn3/Binaries
 /assn6/Binaries
+Engine/
+
 
 # C/C++ source files
 !*.c
